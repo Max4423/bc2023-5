@@ -70,7 +70,18 @@
 			"name": "POST /upload",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "formdata",
 					"formdata": [
@@ -95,6 +106,23 @@
 					"port": "8000",
 					"path": [
 						"upload"
+					],
+					"query": [
+						{
+							"key": "note_name",
+							"value": "note1",
+							"disabled": true
+						},
+						{
+							"key": "note",
+							"value": "notatka1",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
 					]
 				}
 			},
@@ -108,12 +136,14 @@
 					{
 						"key": "",
 						"value": "",
-						"type": "text"
+						"type": "text",
+						"disabled": true
 					},
 					{
 						"key": "",
 						"value": "",
-						"type": "text"
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"url": {
@@ -137,8 +167,8 @@
 				"method": "PUT",
 				"header": [
 					{
-						"key": "note",
-						"value": "note2NEW",
+						"key": "",
+						"value": "",
 						"type": "text"
 					},
 					{
@@ -147,8 +177,18 @@
 						"type": "text"
 					}
 				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "note",
+							"value": "notatkaUPD",
+							"type": "text"
+						}
+					]
+				},
 				"url": {
-					"raw": "http://localhost:8000/notes/note2",
+					"raw": "http://localhost:8000/notes/note1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -156,7 +196,7 @@
 					"port": "8000",
 					"path": [
 						"notes",
-						"note2"
+						"note1"
 					]
 				}
 			},
@@ -179,7 +219,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8000/notes/note2",
+					"raw": "http://localhost:8000/notes/note1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -187,7 +227,7 @@
 					"port": "8000",
 					"path": [
 						"notes",
-						"note2"
+						"note1"
 					]
 				}
 			},
