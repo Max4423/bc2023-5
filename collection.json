@@ -165,27 +165,10 @@
 			"name": "PUT /notes/<ім’я нотатки>",
 			"request": {
 				"method": "PUT",
-				"header": [
-					{
-						"key": "",
-						"value": "",
-						"type": "text"
-					},
-					{
-						"key": "",
-						"value": "",
-						"type": "text"
-					}
-				],
+				"header": [],
 				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "note",
-							"value": "notatkaUPD",
-							"type": "text"
-						}
-					]
+					"mode": "raw",
+					"raw": "noteUPD"
 				},
 				"url": {
 					"raw": "http://localhost:8000/notes/note1",
